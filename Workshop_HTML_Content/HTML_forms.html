@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Forms</title>
+</head>
+<body bgcolor="#F9F2F2">
+  <h1 id="title" style="color: red;text-align: center;margin:0;">Welcome to WebDev Basics 1.0</h1>
+  <hr size="4" noshade color="black" width="35%">
+
+  <h1 align="center"> HTML: Forms</h1>
+  <form action="#" method="POST" target="_BLANK">
+<!--     The target attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form. -->
+    <fieldset>
+      <legend><b>Input Element Attributes</b></legend>
+        <label for="Text">Text:</label>
+        <input type="Text" id="Text" required><br><br>
+        <label for="Password">Password:</label>
+        <input type="Password" id="Password"><br><br>
+        <label for="Email">Email:</label>
+        <input type="Email" id="Email"><br><br>
+        <label for="Date">Date:</label>
+        <input type="Date" id="Date"><br><br>
+        <label for="Month">Month:</label>
+        <input type="Month" id="Month"><br><br>
+        <label for="Week">Week:</label>
+        <input type="Week" id="Week"><br><br>
+        <label for="Time">Time:</label>
+        <input type="Time" id="Time"><br><br>
+        <label for="Number">Number:</label>
+        <input type="Number" id="Number" step="" min="" max=""><br><br>
+        <label for="Radio">Radio:</label>
+        <input type="Radio" id="Radio"><br><br>
+        <label for="Radio">Radio Checked:</label>
+        <input type="Radio" id="Radio" checked><br><br>
+        <label for="Checkbox">Checkbox:</label>
+        <input type="Checkbox" id="Checkbox"><br><br>
+        <label for="Checkbox">Checkbox Checked:</label>
+        <input type="Checkbox" id="Checkbox" checked><br><br>
+        <label for="Submit">Submit Button:</label>
+        <input type="Submit" id="Submit"><br><br>
+        <label for="Reset">Reset Button:</label>
+        <input type="Reset" id="Reset"><br><br>
+<!--         Normal Button we will use later for javascript functionality -->
+        <label for="Button">Noraml Button:</label>
+        <input type="Button" id="Button"><br><br>
+<!--         Note: type="range" is not supported in Internet Explorer 9 and earlier versions. -->
+        <label for="Range">Range:</label>
+        <input type="Range" id="Range" name="Range" min="0" max="10"><br><br>
+        <label for="File">File:</label>
+        <input type="File" id="File"><br><br>
+        <label for="File">File(For choosing multiple files):</label>
+        <input type="File" id="File" multiple><br><br>
+        <label for="Color">Color:</label>
+        <input type="Color" id="Color"><br><br>
+        <label for="Hidden">Hidden:</label>
+        <input type="Hidden" id="Hidden"><br><br>
+        <pre>
+          And Their are many more like:
+          
+          input type="url"
+          input type="image"
+          input type="search"
+          input type="tel"
+          
+          But thier browser support is not good and we don't use them much.
+          
+          NOTE: You don't have to learn all these you can always refer to this document.
+        </pre>
+    </fieldset>
+  </form>
+  <hr>
+  <form action="#" method="GET">
+    <fieldset>
+      <legend><b>Placeholder Attribute</b></legend>
+      Name: <input type="text" name="Name1"><br><br>
+      Name: <input type="text" value="Shreyansh" name="Name2"><br><br>
+      Name: <input type="text" placeholder="Enter name here" name="Name3"><br><br>
+      <input type="Submit">
+    </fieldset><br>
+    <fieldset>
+      <legend><b>Autofocus Attribute</b></legend>
+      Username: <input type="text" placeholder="Enter Username here"><br><br>
+<!--  <input> element should automatically get focus when the page loads -->
+      Username: <input type="text" autofocus><br><br>
+      <input type="Submit">
+    </fieldset>
+  </form>
+  <br><hr><br>
+  <form action="#" method="POST">
+    <fieldset>
+      <legend><b>Some Important Input Elements</b></legend>
+      Read-Only Text: <input type="text" value="Shreyansh Varshney" readonly><br><br>
+      Disabled Text: <input type="text" value="Shreyansh Varshney" disabled><br><br>
+      Dropdown List: <select name="city">
+      <option value="bhopal">Bhopal</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="gwalior">Gwalior</option>
+      <option value="noida">Noida</option>
+      </select><br><br>
+<!--  Dropdown with different default value -->
+      Dropdown List: <select name="city">
+      <option value="bhopal">Bhopal</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="gwalior" selected>Gwalior</option>
+      <option value="noida">Noida</option>
+      </select><br><br>
+      Dropdown List(Multiple Selection): <select name="city" size="3" multiple>
+      <option value="bhopal">Bhopal</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="gwalior" selected>Gwalior</option>
+      <option value="noida">Noida</option>
+      <option value="jaipur">Jaipur</option>
+      </select><br><br>
+      Textarea: <textarea name="quote" rows="5" cols="30">I am not in danger, I am the danger and I am the one who           knocks.</textarea><br><br>
+      Textarea: <textarea name="quote" rows="5" cols="30" style="resize:none;">I am not in danger, I am the danger and I am the one who knocks.</textarea><br><br>
+      
+<!--  The datalist element specifies a list of pre-defined options for an input element. -->
+      *Datalist(Select your branch): <input list="branch">
+                 <datalist id="branch">
+                   <option value="computer science engineering">
+                   <option value="information technology engineering">
+                   <option value="electronics and communications engineering">
+                   <option value="mechanical engineering">
+                   <option value="civil engineering">
+                 </datalist ><br><br>
+      Gender(Radio button with label):
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male"> 
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female"><br><br>
+      Gender(Radio button without label):
+      Male: <input type="radio" name="gender" value="male"> 
+      Female: <input type="radio" name="gender" value="female"><br><br>
+    </fieldset>
+  </form>
+  <hr><hr>
+  <footer>
+    <h3>That's all for HTML:5 Forms topic. Practise it. For any further doubts DM or ask on whatsApp group.</h3>
+    <h3>Hope to see you at the next workshop of CSS(Cascading Style Sheets).</h3>
+    <h3>~Shreyansh Varshney</h3>
+  </footer>
+</body>
+</html>
