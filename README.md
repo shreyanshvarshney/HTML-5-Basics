@@ -1,4 +1,4 @@
-# Welcome to WebDev Basics 1.0
+# Welcome to WebDev Basics 19.1
 <img src="images/DSCJIITNOIDA.png"> 
 
 ## HTML:5 Workshop by DSC JIIT NOIDA
@@ -10,8 +10,9 @@
 Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
 
 ## Topics covered
- - Basic HTML Tags
+ - HTML Basic Tags
  - HTML Tables/Frames
+ - HTML Multimedia
  - HTML Forms
 
 ## Contributors
