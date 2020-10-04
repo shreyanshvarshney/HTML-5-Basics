@@ -14,9 +14,12 @@ Web browsers receive HTML documents from a web server or from local storage and 
  - HTML Tables/Frames
  - HTML Multimedia
  - HTML Forms
+ 
+ ## Contributing & PR
+ Before contributing to the project make sure to read the [Contributing Guidelines.](/Contributing.md) 
 
 ## Contributors
  - Shreyansh Varshney [Github](https://github.com/shreyanshvarshney)
  - Jai Parakh [Github](https://github.com/JaiParakh/)
  - N Pawan Kumar [Github](https://github.com/npawan98)
-
+ - Rafid [Github](https://github.com/Rafid-009)
